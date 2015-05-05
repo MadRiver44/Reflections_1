@@ -1,0 +1,49 @@
+Reflections 2/21/15
+
+Version control is absolutely fantastic for debugging and remembering where and what changes took place. some of the questions I have thus far are:
+	1. does any saved update automatically become the "old version" as compared to the current version I may be working on?
+	2. what are forks?
+	3. will I be checking version in the terminal, git, or in sublime?
+
+I read a portion of the paper on Relections and the impact on learning, Excellent! It's something I've known intuitively all along but nonetheless it cites ways to implement it better as well as a different processes to implement it.
+
+https://sites.google.com/site/reflection4learning/Home
+
+and this is the paper
+
+http://184.182.233.150/rid=1LW06D9V6-26428MK-1Z64/Mezirow's%20chapter,%20How%20Critical%20Refletion%20Triggers%20TL.pdf
+
+
+How could having easy file access to the entire history of a file make you a better/ more efficient programmer in the long term?
+
+	1. one can learn from persistent mistakes because upon examination, a pattern of making the same mistake or very similar mistakes could be observed.
+
+	2. quickly being able to zero in on errors and reduce time wasted
+
+	3. compare for the efficeintcy of the program itself, observe and ask "how could I make the perform better?"
+
+
+What are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like in Google docs does?
+
+Reflections 05/01/15
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+	1. The positive is that one has control of commits. Another is that you can make better sense of what the commits mean in their context.
+	2. The cons are someimes one can forget, the size is too big, sometimes too small.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+	1. Git is the preferred choice of pro developers. Some projects need various files to work together, thus having one project have a snapshot is beneficial. by treating each file seperately you may have to track other changes based on a time frame. Plus, its more work hopping from file to file.
+
+How can you use the commands git log and git diff to view the history of files?
+
+	1.	Git log is used for seeing all the commits made to a file. Git diff is used to compare two versions of a file to notice changes.
+
+How might using version control make you more confident to make changes that could break something?
+
+	1. Very confident. Why? Because I an revert back to a previous version if I created a new bug or by using git checkout. In addition I recieve the "Head state" notification to alert me and tell me hoe to get back to the original commit.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+	1.Simple, Version control for all my needs.. practice problems, html, css, javascript, stc.

@@ -1,0 +1,10 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	1. To intitialize / start a new repository ...
+
+		a. go to the directory where the file is located (cd to location on command line)
+		b. use touch [file name( if file has two seperate words surround file name with qoutes)]
+		c. once new file is created use git init
+		d. check git status
+
+	2. You need it to start a version control on a new file
