@@ -7,4 +7,25 @@ What happens when you initialize a repository? Why do you need to do it?
 		c. once new file is created use git init
 		d. check git status
 
-	2. You need it to start a version control on a new file
+	2. You need it to start a version control on a new file.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	1. The staging area allows more flexibility by letting the user make the standard "one logical change per commit" rather than going straight from the working directory, which is merely found on the hard drive.
+
+	2. At this point one can remove a file from the staging area by using "git rm".
+
+To make changes to user id and email follow this:
+
+		[master (root-commit) 3fd43ff] Add lessons 1 and 2 reflections
+	 	Committer: Kevin Turney <kevinturney@Kevins-MacBook-Pro.local>
+		Your name and email address were configured automatically based
+		on your username and hostname. Please check that they are accurate.
+		You can suppress this message by setting them explicitly:
+
+	    git config --global user.name "Your Name"
+	    git config --global user.email you@example.com
+
+		After doing this, you may fix the identity used for this commit with:
+
+	    git commit --amend --reset-author
