@@ -29,3 +29,12 @@ To make changes to user id and email follow this:
 		After doing this, you may fix the identity used for this commit with:
 
 	    git commit --amend --reset-author
+
+
+To make a commit
+
+	a. check "git status" to see the satging area ( is anything in there?)
+	b. enter "git commit", this opens editor to add commit message
+	c. quit the editior
+	d. "git log", to see the commit was added
+	e. "git status" 
