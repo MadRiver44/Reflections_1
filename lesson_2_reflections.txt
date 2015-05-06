@@ -15,6 +15,14 @@ How is the staging area different from the working directory and the repository?
 
 	2. At this point one can remove a file from the staging area by using "git rm".
 
+	3. The staging area has the most recent changes before the commit.
+
+	4. "git diff" with no arguments compares the working directory to the staging area.
+
+	5. To compare the staging area to the the most recent commit in the repository, use "git diff --staged"
+
+	6. "git reset --hard" removes changes made made in the working directory and the staging area, be careful
+
 To make changes to user id and email follow this:
 
 		[master (root-commit) 3fd43ff] Add lessons 1 and 2 reflections
@@ -33,10 +41,18 @@ To make changes to user id and email follow this:
 
 To make a commit
 
-	a. check "git status" to see the staging area ( is anything in there?)
+	a. check "git status" to see the staging area (is anything in there?)
 	b. "git add" + file name
 	c. "git status" to see (in green font) what is about to be added
 	c. enter "git commit", this opens editor to add commit message
 	c. quit the editior
 	d. "git log", to see the commit was added
 	e. "git status" 
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	1. By using git diff --staged, to compare the most recent commit to whats in the staging area.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	1. Branches give you flexibility to experiment with bold and new changes without disrupting the original path.
