@@ -70,4 +70,6 @@ Pulling changes from Github (when the local version is out of date from Github v
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
-	1. I
+	1. If the changes are automatic, 
+
+Forking is just a clone that Github makes for you on their own machines.
