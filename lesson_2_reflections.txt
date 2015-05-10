@@ -61,7 +61,7 @@ How do the diagrams help you visualize the branch structure?
 
 	1. git log --graph --online "branch" "branch" "branch"
 
-	2. it helps by ...	
+	2. pretty self explanatory.
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
@@ -69,4 +69,4 @@ What is the result of merging two branches together? Why do we represent it in t
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 
-	1. The pros are the reduced workload, the alert to potential conflicts, and the cons are ....
+	1. The pros are the reduced workload, the alert to potential conflicts.

@@ -1,7 +1,73 @@
+Password caching:
+	1. See of osxkeychain credential helper is installed
+
+		$ git credential-osxkeychain
+		# Test for the cred helper
+		Usage: git credential-osxkeychain <get|store|erase>
+
+	2. if no..if yes, step 4.
+
+		download w/ curl
+		$ git credential-osxkeychain
+		# Test for the cred helper
+		git: 'credential-osxkeychain' is not a git command. See 'git --help'.
+		$curl -s -O \
+		https://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain
+		# Download the helper
+		$ chmod u+x git-credential-osxkeychain
+		# Fix the permissions on the file so it can be run
+
+ 	3. install helper..
+ 			
+ 		$ sudo mv git-credential-osxkeychain \
+		"$(dirname $(which git))/git-credential-osxkeychain"
+		# Move the helper to the path where git is installed
+		Password: [enter your password]
+
+	4. then ..
+
+		$ git config --global credential.helper osxkeychain
+		# Set git to use the osxkeychain credential helper
+ 		
+
+
+
 When would you want to use a remote repository rather than keeping all your work local?
 
-	1.
+	1. It makes life easy when collaborating in groups, when people are working on differnent parts of the code base.
+
+Seting up a Github Repositpory.
+
+	1. create a new empty reository on Github
+		name it, make it public
+
+	2. copy the http link for the remote, you'll need to have this as a "remote" on my computer
+
+	3. On terminal..
+		$ git remote
+		#if nothing then there are no remotes stored locally
+		$ git remote add origin(name of the remote on this Repository) " the copied link from step 2"
+		$ git remote 
+		origin // shows it has been created
+		$ git remote -v (verbose, outputs more information, and shows url where I fetch data from a
+		and where I push data to.)
+
+	4. $ git push origin master (to send data to Github with the specified branch, two arguments
+		origin (remote I want to send changes to) and branch name)
+
+One can make changes to a file or add a new file directly on Github.
+
+	This may happen if another person is working in the remote and pushed their changes, thus,
+	you may not have these changes locally and need to pull them.
+
+
+Pulling changes from Github (when the local version is out of date from Github version)
+
+	1. git pull origin master (pulls all reachable commits on the master branch into the local repository)
+	
+	2.git log (to view updated pulled commit)
+
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
-	1.
+	1. I
