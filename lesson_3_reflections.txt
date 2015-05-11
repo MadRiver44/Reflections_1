@@ -65,7 +65,7 @@ Pulling changes from Github (when the local version is out of date from Github v
 
 	1. git pull origin master (pulls all reachable commits on the master branch into the local repository)
 	
-	2.git log (to view updated pulled commit)
+	2. git log (to view updated pulled commit)
 
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
@@ -89,7 +89,32 @@ What is the benefit of having a copy of the last known state of the remote store
 	1. For the ease of working offline, in case of emergency disruption of company servers, there is a backup. Also, if someone else made commits to something you were working on, it is easier to see the cahnges to the state before and after.
 
 
+To delete a branch locally...
 
+ 	1. git branch -d "name of branch"
+
+To send commits to the Github repository...
+
+	1. First make sure you opened a new repository on Github (a remote)
+	 	a. hit "+" for a new repository
+	 	b. add the name of the repository, ie MadRiver44/newrepo
+	 	c. click public.
+	 		# only click Initialize README if there are zero commits locally
+	 		# if you have nothing then the Readme will act as the first commmit
+	 		# you can't clone a repository with no commits in it
+
+	 	d. add Github repository as a remote on my computer
+	 	e. use git remote to view and create remotes (this, with no arguments lets you see all remotes)
+	 	f. then.. git remote add origin "url link of the new repository"
+	 		# if you only have one remote then it's standard to use "origin"
+	 	g. git remote
+	 	 	$ origin // now you can see origin is created
+	 	h. to make sure url was added correctly, git remote -v
+	 	 	# outputs the urls where data is pulled from and pushed to
+	 	 	# most cases, urls are the same
+	 	i. now git push origin master
+	 	 	# takes 2 arguments 1. name of remote, 2. the name of the local branch to push to
+	 	j. by default, the branch name pushed, (that is local) will also be the name of the branch on Github
 
 
 
