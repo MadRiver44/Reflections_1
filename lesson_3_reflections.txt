@@ -70,6 +70,26 @@ Pulling changes from Github (when the local version is out of date from Github v
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
-	1. If the changes are automatic, 
+	1. If the changes are automatic, there undoubtedly will be conflicts such as commits on the same parts of code. 
 
 Forking is just a clone that Github makes for you on their own machines.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	1. Again a fork is just a clone that Github make for you on their own servers. This is used when there is a repository you would like to work on or add to without having or needing to go through the process of cloning. Plus it is easier to share with other collaborators this way.
+
+	2. A clone is a direct copy from another remote to your own local machine. This is used when one needs to have the ability to work independently with full reachability of the master commmit.
+
+	3. A branch is a deviation from the master branch, one made locally or directly on Github. Here, new features may be added, changed, and experimented on without disrupting the entire project or causing harm.
+
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	1. For the ease of working offline, in case of emergency disruption of company servers, there is a backup. Also, if someone else made commits to something you were working on, it is easier to see the cahnges to the state before and after.
+
+
+
+
+
+
